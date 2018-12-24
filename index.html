@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>3D Projection</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+
+    <div id="topBar">
+      <h3 id="fps">0</h3>
+    </div>
+
+    <div id="sideBar">
+      <h3>Perspective:</h3>
+      <input type="checkbox" value="Perspective" id="perspectiveBool" onclick="setPerspective()">
+      <h3>Focal Length?:</h3>
+      <input type="range" min="2" max="10" value="4" step=".1" class="slider" id="distance"></li>
+      <h3>Box size:</h3>
+      <input type="range" min="100" max="500" value="100" step="10" class="slider" id="boxSize"></li>
+      <h3>X Rotation Speed:</h3>
+      <input type="range" min="0" max=".05" value="0" step=".001" class="slider" id="x-rot"></li>
+      <h3>Y Rotation Speed:</h3>
+      <input type="range" min="0" max=".05" value="0" step=".001" class="slider" id="y-rot"></li>
+      <h3>Z Rotation Speed:</h3>
+      <input type="range" min="0" max=".05" value="0" step=".001" class="slider" id="z-rot"></li>
+      <h3>XW Rotation Speed:</h3>
+      <input type="range" min="0" max=".05" value="0" step=".001" class="slider" id="xw-rot"></li>
+      <h3>YW Rotation Speed:</h3>
+      <input type="range" min="0" max=".05" value="0" step=".001" class="slider" id="yw-rot"></li>
+      <h3>ZW Rotation Speed:</h3>
+      <input type="range" min="0" max=".05" value="0" step=".001" class="slider" id="zw-rot"></li>
+    </div>
+
+    <canvas></canvas>
+
+    <script src="./js/canvasSetup.js"></script>
+    <script src="./js/Matrix.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
